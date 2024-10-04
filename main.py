@@ -10,7 +10,7 @@ def process_file(request):
 
     # Set up GCS client
     storage_client = storage.Client()
-    bucket_name = 'screen-it-prod-export-203db76e'
+    bucket_name = 'bucket-id'
     source_bucket = storage_client.bucket(bucket_name)
 
     # Copy from bucket to /tmp/
